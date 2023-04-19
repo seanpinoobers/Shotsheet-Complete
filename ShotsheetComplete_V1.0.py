@@ -114,10 +114,10 @@ if os.path.isfile('credentials.txt'):
 
     if username_var.get() == 'mars_precisionhawk' or username_var.get() =='earth_precisionhawk':
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "pge2023!")
+        password_entry.insert(0, "Enter Password")
     else:
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "pge2022!")
+        password_entry.insert(0, "Enter Password")
 
     password_entry.pack(pady=(0,25))
 
@@ -126,7 +126,7 @@ if os.path.isfile('credentials.txt'):
     pilot_label.pack()
     pilot_var = tk.StringVar(window)
     pilot_var.set(pilot) # default value
-    pilot_menu = tk.OptionMenu(window, pilot_var, "Justin Hoogeveen", "Jason Wilkes", "Ian Foley", "Zaynon Smallwood", "Sean Franklin", "Garth Howard")
+    pilot_menu = tk.OptionMenu(window, pilot_var, "User 1", "User 2", "User 3", "User 4", "User 5", "User 6")
     pilot_menu.pack(pady=(0, 20))
     pilot_menu.config(width=25)
 
@@ -159,17 +159,17 @@ if os.path.isfile('credentials.txt'):
     with open('credentials.txt', 'r') as f:
         username, password, pilot, team = f.read().split(',')
 
-    if pilot == "Sean Franklin":
+    if pilot == "User 5":
         Pilot_ID_item = "expr_1.valueUnique_popup4"
-    elif pilot == "Ian Foley":
+    elif pilot == "User 3":
         Pilot_ID_item = "expr_1.valueUnique_popup1"
-    elif pilot == "Jason Wilkes":
+    elif pilot == "User 2":
         Pilot_ID_item = "expr_1.valueUnique_popup2"
-    elif pilot == "Justin Hoogeveen":
+    elif pilot == "User 1":
         Pilot_ID_item = "expr_1.valueUnique_popup3"
-    elif pilot == "Zaynon Smallwood":
+    elif pilot == "User 4":
         Pilot_ID_item = "expr_1.valueUnique_popup5"
-    elif pilot == "Garth Howard":
+    elif pilot == "User 6":
         Pilot_ID_item = "expr_1.valueUnique_popup0"
 
 else:
@@ -189,11 +189,11 @@ else:
 
     if username_var.get() == 'mars_precisionhawk' or username_var.get() =='earth_precisionhawk':
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "pge2023!")
+        password_entry.insert(0, "Enter Password")
         password_entry.update_idletasks()
     else:
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "pge2022!")
+        password_entry.insert(0, "Enter Password")
         password_entry.update_idletasks()
     
     password_entry.pack(pady=(0,25))
@@ -202,7 +202,7 @@ else:
     pilot_label.pack()
     pilot_var = tk.StringVar(window)
     pilot_var.set("Select Pilot") # default value
-    pilot_menu = tk.OptionMenu(window, pilot_var, "Justin Hoogeveen", "Jason Wilkes", "Ian Foley", "Zaynon Smallwood", "Sean Franklin", "Garth Howard")
+    pilot_menu = tk.OptionMenu(window, pilot_var, "User 1", "User 2", "User 3", "User 4", "User 5", "User 6")
     pilot_menu.pack(pady=(0, 20)) # Add extra padding only at the bottom of the menu
     pilot_menu.config(width=25) # Set the width of the menu widget
 
@@ -234,17 +234,17 @@ else:
     with open('credentials.txt', 'r') as f:
         username, password, pilot, team = f.read().split(',')
 
-    if pilot == "Sean Franklin":
+     if pilot == "User 5":
         Pilot_ID_item = "expr_1.valueUnique_popup4"
-    elif pilot == "Ian Foley":
+    elif pilot == "User 3":
         Pilot_ID_item = "expr_1.valueUnique_popup1"
-    elif pilot == "Jason Wilkes":
+    elif pilot == "User 2":
         Pilot_ID_item = "expr_1.valueUnique_popup2"
-    elif pilot == "Justin Hoogeveen":
+    elif pilot == "User 1":
         Pilot_ID_item = "expr_1.valueUnique_popup3"
-    elif pilot == "Zaynon Smallwood":
+    elif pilot == "User 4":
         Pilot_ID_item = "expr_1.valueUnique_popup5"
-    elif pilot == "Garth Howard":
+    elif pilot == "User 6":
         Pilot_ID_item = "expr_1.valueUnique_popup0"
 
 try:
