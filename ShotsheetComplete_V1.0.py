@@ -106,13 +106,13 @@ if os.path.isfile('credentials.txt'):
     username_label.pack(pady=(5, 0))
     username_var = tk.StringVar(window)
     username_var.set(username) # default value
-    username_menu = tk.OptionMenu(window, username_var, "mercury_precisionhawk", "venus_precisionhawk", "earth_precisionhawk", "mars_precisionhawk", "jupiter_precisionhawk", "saturn_precisionhawk", "neptune_precisionhawk")
+    username_menu = tk.OptionMenu(window, username_var, "username1", "username2", "username3", "username4", "username5", "username6", "username7")
     username_menu.pack(pady=(0,0)) # Add extra padding only at the bottom of the menu
     username_menu.config(width=25) # Set the width of the menu widget
 
     password_entry = tk.Entry(window, show='*')
 
-    if username_var.get() == 'mars_precisionhawk' or username_var.get() =='earth_precisionhawk':
+    if username_var.get() == 'username4' or username_var.get() =='username3':
         password_entry.delete(0, tk.END)
         password_entry.insert(0, "Enter Password")
     else:
@@ -181,13 +181,13 @@ else:
     username_label.pack(pady=(5, 0))
     username_var = tk.StringVar(window)
     username_var.set("Select Username") # default value
-    username_menu = tk.OptionMenu(window, username_var, "mercury_precisionhawk", "venus_precisionhawk", "earth_precisionhawk", "mars_precisionhawk", "jupiter_precisionhawk", "saturn_precisionhawk", "neptune_precisionhawk")
+    username_menu = tk.OptionMenu(window, username_var, "username1", "username2", "username3", "username4", "username5", "username6", "username7")
     username_menu.pack(pady=(0, 20)) # Add extra padding only at the bottom of the menu
     username_menu.config(width=25) # Set the width of the menu widget
 
     password_entry = tk.Entry(window)
 
-    if username_var.get() == 'mars_precisionhawk' or username_var.get() =='earth_precisionhawk':
+    if username_var.get() == 'username4' or username_var.get() =='username3':
         password_entry.delete(0, tk.END)
         password_entry.insert(0, "Enter Password")
         password_entry.update_idletasks()
