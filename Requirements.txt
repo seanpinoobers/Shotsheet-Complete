@@ -1,0 +1,10 @@
+Some Requirements:
+	
+
+1.) All collected images must be in a named folder on your desktop (e.g. 4_14_23)
+
+2.) All white-out shots must be included in image folder for accurate timestamps
+
+3.) Inspected structures must have 'p_lanid' and 'coll_date' entered into Field Maps
+
+4.) Don't mark Access Issue (or any non-Inspected) structures with a collect date
