@@ -549,6 +549,7 @@ formatted_sf = []
 formatted_ef = []
 PoleData_field = []
 
+Company_Name= 'Enter Name Here'
 for i in range(0, len(timestamps), 2):
     start_flight.append(timestamps[i])
     sf = datetime.datetime.strptime(start_flight[-1], "%Y:%m:%d %H:%M:%S")
@@ -597,7 +598,7 @@ try:
         form_fields = fillpdfs.get_form_fields("PGE 2023.pdf")
 
         data_dict = {
-        'dhFormfield-4055512778': 'Precision Hawk',
+        'dhFormfield-4055512778': 'Company_Name',
         'dhFormfield-4055513106': today_pdf,
         'dhFormfield-4055513200': team.upper(),
         'dhFormfield-4055516340': PoleData_field[i],
