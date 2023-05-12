@@ -1,0 +1,25 @@
+                      
+
+
+
+
+
+		             Thanks for using Shotsheet Complete V1.0!
+
+                                             
+
+
+
+                                                            Notes:
+
+	Collect Date should only be marked in Field Maps for Inspected structures (Not Access Issue).
+
+                        White-out shots are necessary for structure timestamp assignment
+		
+         Check structure material options as needed (default is Steel for Tower and Wood for Pole)		
+	            For permission errors right-click and choose 'Run as Administrator'
+                               
+                                        Please reach out with any feedback.
+
+
+				        Enjoy!
