@@ -106,18 +106,18 @@ if os.path.isfile('credentials.txt'):
     username_label.pack(pady=(5, 0))
     username_var = tk.StringVar(window)
     username_var.set(username) # default value
-    username_menu = tk.OptionMenu(window, username_var, "username1", "username2", "username3", "username4", "username5", "username6", "username7")
+    username_menu = tk.OptionMenu(window, username_var, "mercury_precisionhawk", "venus_precisionhawk", "earth_precisionhawk", "mars_precisionhawk", "jupiter_precisionhawk", "saturn_precisionhawk", "neptune_precisionhawk")
     username_menu.pack(pady=(0,0)) # Add extra padding only at the bottom of the menu
     username_menu.config(width=25) # Set the width of the menu widget
 
     password_entry = tk.Entry(window, show='*')
 
-    if username_var.get() == 'username4' or username_var.get() =='username3':
+    if username_var.get() == 'mars_precisionhawk' or username_var.get() =='earth_precisionhawk':
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "Enter Password")
+        password_entry.insert(0, "pge2023!")
     else:
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "Enter Password")
+        password_entry.insert(0, "pge2022!")
 
     password_entry.pack(pady=(0,25))
 
@@ -126,7 +126,7 @@ if os.path.isfile('credentials.txt'):
     pilot_label.pack()
     pilot_var = tk.StringVar(window)
     pilot_var.set(pilot) # default value
-    pilot_menu = tk.OptionMenu(window, pilot_var, "User 1", "User 2", "User 3", "User 4", "User 5", "User 6")
+    pilot_menu = tk.OptionMenu(window, pilot_var, "Justin Hoogeveen", "Jason Wilkes", "Ian Foley", "Zaynon Smallwood", "Sean Franklin", "Garth Howard")
     pilot_menu.pack(pady=(0, 20))
     pilot_menu.config(width=25)
 
@@ -144,7 +144,7 @@ if os.path.isfile('credentials.txt'):
     date_button = tk.Button(window, text="Select Collection Date", command=lambda: select_date(date_button), name="date_button")
     date_button.pack()
 
-    warning_label = tk.Label(window, text="IMPORTANT\n(1) Create a folder on your desktop\n(2) Name the folder the selected date with format M_D_YY\n(3) Place all collected images from that day into the folder")
+    warning_label = tk.Label(window, text="IMPORTANT\n(1) Create a folder on your desktop\n(2) Name the folder the selected date with format M_D_YY\n(3) Place all collected images from that day into the folder\n(Images only, no folders)")
     warning_label.pack(pady=(10,0))
 
     # Add a button to save the credentials
@@ -159,17 +159,17 @@ if os.path.isfile('credentials.txt'):
     with open('credentials.txt', 'r') as f:
         username, password, pilot, team = f.read().split(',')
 
-    if pilot == "User 5":
+    if pilot == "Sean Franklin":
         Pilot_ID_item = "expr_1.valueUnique_popup4"
-    elif pilot == "User 3":
+    elif pilot == "Ian Foley":
         Pilot_ID_item = "expr_1.valueUnique_popup1"
-    elif pilot == "User 2":
+    elif pilot == "Jason Wilkes":
         Pilot_ID_item = "expr_1.valueUnique_popup2"
-    elif pilot == "User 1":
+    elif pilot == "Justin Hoogeveen":
         Pilot_ID_item = "expr_1.valueUnique_popup3"
-    elif pilot == "User 4":
+    elif pilot == "Zaynon Smallwood":
         Pilot_ID_item = "expr_1.valueUnique_popup5"
-    elif pilot == "User 6":
+    elif pilot == "Garth Howard":
         Pilot_ID_item = "expr_1.valueUnique_popup0"
 
 else:
@@ -181,19 +181,19 @@ else:
     username_label.pack(pady=(5, 0))
     username_var = tk.StringVar(window)
     username_var.set("Select Username") # default value
-    username_menu = tk.OptionMenu(window, username_var, "username1", "username2", "username3", "username4", "username5", "username6", "username7")
+    username_menu = tk.OptionMenu(window, username_var, "mercury_precisionhawk", "venus_precisionhawk", "earth_precisionhawk", "mars_precisionhawk", "jupiter_precisionhawk", "saturn_precisionhawk", "neptune_precisionhawk")
     username_menu.pack(pady=(0, 20)) # Add extra padding only at the bottom of the menu
     username_menu.config(width=25) # Set the width of the menu widget
 
     password_entry = tk.Entry(window)
 
-    if username_var.get() == 'username4' or username_var.get() =='username3':
+    if username_var.get() == 'mars_precisionhawk' or username_var.get() =='earth_precisionhawk':
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "Enter Password")
+        password_entry.insert(0, "pge2023!")
         password_entry.update_idletasks()
     else:
         password_entry.delete(0, tk.END)
-        password_entry.insert(0, "Enter Password")
+        password_entry.insert(0, "pge2022!")
         password_entry.update_idletasks()
     
     password_entry.pack(pady=(0,25))
@@ -202,7 +202,7 @@ else:
     pilot_label.pack()
     pilot_var = tk.StringVar(window)
     pilot_var.set("Select Pilot") # default value
-    pilot_menu = tk.OptionMenu(window, pilot_var, "User 1", "User 2", "User 3", "User 4", "User 5", "User 6")
+    pilot_menu = tk.OptionMenu(window, pilot_var, "Justin Hoogeveen", "Jason Wilkes", "Ian Foley", "Zaynon Smallwood", "Sean Franklin", "Garth Howard")
     pilot_menu.pack(pady=(0, 20)) # Add extra padding only at the bottom of the menu
     pilot_menu.config(width=25) # Set the width of the menu widget
 
@@ -219,7 +219,7 @@ else:
     date_button = tk.Button(window, text="Select Collection Date", command=lambda: select_date(date_button), name="date_button")
     date_button.pack()
 
-    warning_label = tk.Label(window, text="IMPORTANT\n(1) Create a folder on your desktop\n(2) Name the folder the selected date with format M_D_YY\n(3) Place all collected images from that day into the folder")
+    warning_label = tk.Label(window, text="IMPORTANT\n(1) Create a folder on your desktop\n(2) Name the folder the selected date with format M_D_YY\n(3) Place all collected images from that day into the folder\n(Images only, no folders)")
     warning_label.pack(pady=(10,0))
 
     # Add a button to save the credentials
@@ -234,17 +234,17 @@ else:
     with open('credentials.txt', 'r') as f:
         username, password, pilot, team = f.read().split(',')
 
-     if pilot == "User 5":
+    if pilot == "Sean Franklin":
         Pilot_ID_item = "expr_1.valueUnique_popup4"
-    elif pilot == "User 3":
+    elif pilot == "Ian Foley":
         Pilot_ID_item = "expr_1.valueUnique_popup1"
-    elif pilot == "User 2":
+    elif pilot == "Jason Wilkes":
         Pilot_ID_item = "expr_1.valueUnique_popup2"
-    elif pilot == "User 1":
+    elif pilot == "Justin Hoogeveen":
         Pilot_ID_item = "expr_1.valueUnique_popup3"
-    elif pilot == "User 4":
+    elif pilot == "Zaynon Smallwood":
         Pilot_ID_item = "expr_1.valueUnique_popup5"
-    elif pilot == "User 6":
+    elif pilot == "Garth Howard":
         Pilot_ID_item = "expr_1.valueUnique_popup0"
 
 try:
@@ -514,8 +514,13 @@ for pole_name, pole_coords in matches.items():
                                 min_distance = distance
                                 closest_match = file
                                 closest_timestamp = timestamp
-
-    photo_match[pole_name] = closest_timestamp
+    try:
+        photo_match[pole_name] = closest_timestamp
+    except NameError:
+        print('\n--Could not read image timestamps--\n\nMake sure the image folder ' + folder_date + ' is not empty and contains only images\n(no folders within the image folder)')
+        while True:
+            pass
+    
     print('Structure ', index, '...\n')
     index += 1
 
@@ -528,7 +533,6 @@ try:
     zip_poleid_saps = sorted(zip_poleid_saps, key=lambda x: pole_timestamps[pole_names.index(x[0])])
 except ValueError:
     print("Photo/Timestamp/Structure Match Error:\n-Make sure all images are present in folder\n-Structures are marked as collected\n-Only Inspected structures have coll_date\n-KML file is up to date.")
-    import sys
     while True:
         pass
 
@@ -549,7 +553,6 @@ formatted_sf = []
 formatted_ef = []
 PoleData_field = []
 
-Company_Name= 'Enter Name Here'
 for i in range(0, len(timestamps), 2):
     start_flight.append(timestamps[i])
     sf = datetime.datetime.strptime(start_flight[-1], "%Y:%m:%d %H:%M:%S")
@@ -598,7 +601,7 @@ try:
         form_fields = fillpdfs.get_form_fields("PGE 2023.pdf")
 
         data_dict = {
-        'dhFormfield-4055512778': 'Company_Name',
+        'dhFormfield-4055512778': 'Precision Hawk',
         'dhFormfield-4055513106': today_pdf,
         'dhFormfield-4055513200': team.upper(),
         'dhFormfield-4055516340': PoleData_field[i],

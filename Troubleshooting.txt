@@ -1,0 +1,37 @@
+													At an average of 12-15 structures, shotsheets take about an hour to complete
+
+													1 Hour a day min x 5 teams x 6 days a week x 4.2 weeks in a month x 3 months
+
+													= MIN 378 hours a season x $45/hour = $17,010 per season x ? seasons
+
+-Permission Errors: Right click application and select 'Run as Administrator'
+
+-Must have internet connection
+
+-Need Microsoft Edge or Google Chrome browser
+
+-Image folders must contain all images for the selected day and be located on the Desktop
+ with the naming convention "4_5_23" (M_D_YY) [not "04_05_23" and not "4/5/23"]
+
+-All Structures must be marked as collected for that same date
+
+-All white-out shots are necessary for accurate time stamps
+
+-KML must be up to date
+
+-Structure_types for 'Frame' currently translates to 'HFrame'
+  Not sure if 'shotsheet' fieldmaps data for Frame is same as H-Frame on actual shotsheet PDF.
+
+-Check PDF material options as needed (default is Steel for Tower/Frame and Wood for Pole)		
+
+
+UNIQUE VARIABLES
+- Team username and password: mars_precisionhawk / pge2023! or pge2022!
+- Team name: Alpha,Bravo,etc. --> computer name must be identical
+- Pilot HTML ID : "expr_1.valueUnique_popup4"
+- Save paths / file locations / file naming (Automated to Desktop)
+- PGE template file location and name (included in package)
+- KML name / file location (included in package)
+- Structure order is dependent on accurate KML Lat/Long Data
+- Program is dependent on accurate info updated by user in Field Maps
+
